@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Nerds</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>  
+	<header class="main-header">
+		<div class="container">
+			<div class="header-top clearfix">
+			  <nav class="main-menu clearfix">
+          <img class="main-logo" src="img/main-logo.png" alt="nerds" width="140" height="57">
+				  <ul>
+            <li><a href="#">Контакты</a></li>
+            <li class="active"><a href="#">Магазин</a></li>
+            <li><a href="#">Клиенты</a></li>
+					  <li><a href="index.html">Студия</a></li>
+				  </ul>
+			  </nav>
+        <a href="#" class="user-cart">Корзина</a>  
+		  </div>
+		  <div class="header-title">
+			  <h1>Добро пожаловать в магазин готовых макетов</h1>
+		  </div>
+		</div>
+	</header>
+	<main class="shop container clearfix">
+   <form class="shop-sort" action="" method="post">
+     <fieldset class="field-range">
+       <legend>Стоимость</legend>
+       <input type="range" name="cost" min="0" max="20000" step="500">
+       <div class="output-area">
+         <output name="cost-min">0</output>
+         <output name="cost-max">2000</output>  
+       </div>
+       
+     </fieldset>
+     <fieldset class="field-radio">
+       <legend>Сетка</legend>
+       <input type="radio" name="grid" id="adapted" checked>
+       <label for="adapted">Адаптивная</label>
+       <input type="radio" name="grid" id="rubber">
+       <label for="rubber">Резиновая</label>
+       <input type="radio" name="grid" id="fixed">
+       <label for="fixed">Фискированная</label>
+     </fieldset>
+     <fieldset class="field-checkbox">
+       <legend>Особенности</legend>
+       <input type="checkbox" name="slider" id="slider" checked>
+       <label for="slider">Слайдер</label>
+       <input type="checkbox" name="advantage" id="advantage">
+       <label for="advantage">Блок преимуществ</label>
+       <input type="checkbox" name="news" id="news" checked>
+       <label for="news">Новости</label>
+       <input type="checkbox" name="gallery" id="gallery">
+       <label for="gallery">Галерея</label>
+       <input type="checkbox" name="cart" id="cart">
+       <label for="cart">Корзина</label>
+     </fieldset>
+     <button class="btn btn-sort" type="button">Показать</button>
+   </form>
+   <div class="shop-content">
+     <div class="shop-filter clearfix">
+       <div class="type-filters"> 
+         <b>сортировать:</b>
+         <ul>
+           <li>По цене</li>
+           <li>По типу</li>
+           <li>По функционалу</li>
+         </ul>
+       </div>
+       <div class="button-filters"> 
+          <button class="filter filter-down-active" type="button"></button>
+          <button class="filter filter-up" type="button"></button>
+       </div>
+     </div>
+     <div class="shop-catalog">
+       <div class="catalog-item">
+         <a href="#"><img src="img/catalog-1.jpg" width="240" height="240" alt="aviator"></a>
+         <div class="catalog-item-info">
+           <h3>Aviator</h3>
+           <p>Интернет магазин с личным кабинетом</p>
+           <span class="btn btn-price">10000р.</span>
+         </div>
+       </div>
+       <div class="catalog-item">
+         <a href="#"><img src="img/catalog-2.jpg" width="240" height="240" alt="aviator"></a>
+         <div class="catalog-item-info">
+           <h3>Aviator</h3>
+           <p>Интернет магазин с личным кабинетом</p>
+           <span class="btn btn-price">10000р.</span>
+         </div>
+       </div>
+       <div class="catalog-item">
+         <a href="#"><img src="img/catalog-3.jpg" width="240" height="240" alt="aviator"></a>
+         <div class="catalog-item-info">
+           <h3>Aviator</h3>
+           <p>Интернет магазин с личным кабинетом</p>
+           <span class="btn btn-price">10000р.</span>
+         </div>
+       </div>
+       <div class="catalog-item">
+         <a href="#"><img src="img/catalog-4.jpg" width="240" height="240" alt="aviator"></a>
+         <div class="catalog-item-info">
+           <h3>Aviator</h3>
+           <p>Интернет магазин с личным кабинетом</p>
+           <span class="btn btn-price">10000р.</span>
+         </div>
+       </div>
+       <div class="catalog-item">
+         <a href="#"><img src="img/catalog-5.jpg" width="240" height="240" alt="aviator"></a>
+         <div class="catalog-item-info">
+           <h3>Aviator</h3>
+           <p>Интернет магазин с личным кабинетом</p>
+           <span class="btn btn-price">10000р.</span>
+         </div>
+       </div>
+       <div class="catalog-item">
+         <a href="#"><img src="img/catalog-6.jpg" width="240" height="240" alt="aviator"></a>
+         <div class="catalog-item-info">
+           <h3>Aviator</h3>
+           <p>Интернет магазин с личным кабинетом</p>
+           <span class="btn btn-price">10000р.</span>
+         </div>
+       </div>
+     </div>
+     <div class="paginator">
+       <span>1</span>
+       <a href="#">2</a>
+       <a href="#">3</a>
+       <a href="#">Следующая</a>
+     </div>
+   </div>
+  </main>
+  <section class="contacts">
+    <div class="container">
+      <div class="address">
+        <h2>Nerds Design Studio</h2>
+        <p>
+          191186, Краснодар,<br>
+          ул. Б.Конюшенная, д.19/8
+        </p>
+        <p>тел.+7(812)275-75-75</p>
+        <button class="btn btn-link">Напишите нам</button>
+      </div>
+      <!--img class="location" src="" alt="Nerds"-->
+    </div>
+    <img  class="map" src="img/map.jpg" alt="map">
+  </section>
+  <footer class="main-footer container">
+  	<div class="social">
+  		<a href="#" class="btn-social btn-social-vk">Вконтакте</a>
+  		<a href="#" class="btn-social btn-social-fb">Фейсбук</a>
+  		<a href="#" class="btn-social btn-social-inst">Инстаграмм</a>
+  	</div>
+    <div class="social-promo">
+        <p class="promo">Давайте дружить, это выгодно!</p>
+        <p>Скидка 10% для друзей и социальных сетей</p>
+    </div>
+  </footer>
+</body>
+</html>
