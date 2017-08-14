@@ -30,10 +30,9 @@
    <form class="shop-sort" action="" method="post">
      <fieldset class="field-range">
        <legend>Стоимость</legend>
-       <input type="range" name="cost" min="0" max="20000" step="500">
+       0 <input type="range" name="cost" min="0" max="20000" step="500"> 2000
        <div class="output-area">
-         <output name="cost-min">0</output>
-         <output name="cost-max">2000</output>  
+        
        </div>
        
      </fieldset>
@@ -76,7 +75,7 @@
           <button class="filter filter-up" type="button"></button>
        </div>
      </div>
-     <div class="shop-catalog">
+     <div class="shop-catalog clearfix">
        <div class="catalog-item">
          <a href="#"><img src="img/catalog-1.jpg" width="240" height="240" alt="aviator"></a>
          <div class="catalog-item-info">
@@ -126,11 +125,11 @@
          </div>
        </div>
      </div>
-     <div class="paginator">
-       <span>1</span>
-       <a href="#">2</a>
-       <a href="#">3</a>
-       <a href="#">Следующая</a>
+     <div class="paginator clearfix">
+       <span class="btn btn-pagin btn-disabled">1</span>
+       <a class="btn btn-pagin" href="#">2</a>
+       <a class="btn btn-pagin" href="#">3</a>
+       <a class="btn btn-pagin btn-next" href="#">Следующая</a>
      </div>
    </div>
   </main>
